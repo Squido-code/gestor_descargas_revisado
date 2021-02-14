@@ -10,10 +10,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class PrincipalView {
-    Stage stage;
+    public static Stage stage;
 
     public PrincipalView(Stage stage) {
-        this.stage = stage;
+        PrincipalView.stage = stage;
     }
 
     /**
