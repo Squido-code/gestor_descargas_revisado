@@ -1,10 +1,5 @@
 package com.guillermo.gestor.beans;
 
-import com.guillermo.gestor.downloadOptions.view.DownloadOptionsView;
-
-import java.io.IOException;
-
-
 public class FileToDownload {
     boolean ready;
     private String url;
@@ -12,8 +7,8 @@ public class FileToDownload {
     private int delay;
     private String path;
 
-    public void buildFileToDownload() throws IOException {
-        new DownloadOptionsView().downloadOptionsUi(this);
+    public void buildFileToDownload() {
+
     }
 
     public String getUrl() {

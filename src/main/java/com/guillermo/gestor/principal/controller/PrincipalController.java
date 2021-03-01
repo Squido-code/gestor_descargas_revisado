@@ -1,7 +1,6 @@
 package com.guillermo.gestor.principal.controller;
 
-import com.guillermo.gestor.beans.FileToDownload;
-import com.guillermo.gestor.download.view.DownloadView;
+import com.guillermo.gestor.downloadOptions.view.DownloadOptionsView;
 import com.guillermo.gestor.principal.model.PrincipalModel;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -27,14 +26,12 @@ public class PrincipalController {
     public void newDownload(Event event) {
 
         try {
-            FileToDownload fileToDownload = principalModel.
-                    buildDownload();
-            DownloadView downloadView = new DownloadView(fileToDownload);
-            vbDownloads.getChildren().
-                    add(downloadView.downloadViewUi());
+            DownloadOptionsView downloadOptionsView = new DownloadOptionsView(vbDownloads);
+            downloadOptionsView.downloadOptionsUi();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
     }
 }

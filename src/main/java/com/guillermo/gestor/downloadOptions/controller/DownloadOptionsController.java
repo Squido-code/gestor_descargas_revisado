@@ -1,118 +1,91 @@
 package com.guillermo.gestor.downloadOptions.controller;
 
 import com.guillermo.gestor.beans.FileToDownload;
+import com.guillermo.gestor.download.view.DownloadView;
+import com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel;
 import com.guillermo.gestor.principal.view.PrincipalView;
-import com.guillermo.gestor.util.Notifications;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
-import javafx.stage.Stage;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.validator.routines.UrlValidator;
 
 import java.io.File;
-import java.net.URI;
-import java.net.URISyntaxException;
+import java.io.IOException;
 
 
 public class DownloadOptionsController {
 
-    private final FileToDownload fileToDownload;
-    private final Notifications notifications;
-    private final String path;
+
+    private final VBox vbDownloads;
+    private String path;
+    private DownloadOptionsModel downloadOptionsModel;
     public TextField tfURL, tfDelayTime;
     public Button btSelectPath, btAccept, btCancel;
     public Label lbPath;
-    private String url;
-    private String fileName;
 
-    public DownloadOptionsController(FileToDownload fileToDownload, String path) {
-        this.fileToDownload = fileToDownload;
-        this.notifications = new Notifications();
-        this.path = path;
+    /**
+     * Constructor
+     *
+     * @param vbDownloads which is the principal Vbox
+     */
+    public DownloadOptionsController(VBox vbDownloads) {
+        this.vbDownloads = vbDownloads;
     }
 
+    /**
+     * Method that load the basic components data
+     */
+    @FXML
+    public void initialize() {
+        tfDelayTime.setText("0");
+        this.downloadOptionsModel = new DownloadOptionsModel(tfDelayTime, tfURL, path);
+    }
+
+    /**
+     * Method that launch the download panel.
+     * First check the data validation and create a new FileToDownload
+     */
     @FXML
     public void accept() {
-
         try {
-            if (!validations()) {
+            if (!downloadOptionsModel.
+                    validations()) {
                 return;
             }
-            build();
-            closeWindow();
-        } catch (URISyntaxException e) {
-            notifications.errorAlert("URL not supported");
+            FileToDownload fileToDownload = downloadOptionsModel.build();
+            DownloadView downloadView = new DownloadView(fileToDownload);
+            vbDownloads.getChildren().
+                    add(downloadView.downloadViewUi());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        downloadOptionsModel.closeWindow(btAccept);
     }
 
+    /**
+     * Cancel the current operation closing the window
+     */
     @FXML
-    public void closeWindow() {
-        Stage stage = (Stage) btCancel.
-                getParent().
-                getScene().
-                getWindow();
-        stage.close();
+    public void cancel() {
+        downloadOptionsModel.closeWindow(btCancel);
     }
 
+    /**
+     * Let the user choose where the file will be downloaded through a dialog.
+     * After the path is chosen the information get send to the model.
+     */
     @FXML
     private void selectPath() {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File file = directoryChooser.
                 showDialog(PrincipalView.stage);
-        fileToDownload.setPath(file.getPath());
+        path = file.getPath();
+        downloadOptionsModel.setPath(path);
     }
 
-    private Boolean validations() throws URISyntaxException {
-        if (!isURLValid()) {
-            return false;
-        }
-        return isDelayValid();
-    }
 
-    private Boolean isDelayValid() {
-        String delayString = tfDelayTime.
-                getText();
-        Boolean isDelayValid = StringUtils.
-                isNumeric(delayString);
-        if (isDelayValid) {
-            return true;
-        } else {
-            notifications.errorAlert("The delay time should be a number");
-            return false;
-        }
-    }
 
-    private Boolean isURLValid() throws URISyntaxException {
-        this.url = tfURL.getText();
-        URI uri = new URI(url);
-        UrlValidator urlValidator = new UrlValidator();
-        Boolean isValidURL = urlValidator.
-                isValid(url);
-        this.fileName = new File(uri.
-                getPath()).
-                getName();
 
-        if (isValidURL && !fileName.isEmpty()) {
-            return true;
-        } else {
-            notifications.
-                    errorAlert("URL is incorrect");
-            return false;
-        }
-    }
-
-    private void build() {
-        String delayString = tfDelayTime.getText();
-        int delayInt = Integer.
-                parseInt(delayString);
-        fileToDownload.setDelay(delayInt);
-        fileToDownload.setUrl(url);
-        fileToDownload.setName(fileName);
-        fileToDownload.setPath(path);
-        fileToDownload.setReady(true);
-
-    }
 }
