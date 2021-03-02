@@ -1,11 +1,12 @@
 package com.guillermo.gestor.downloadOptions.model;
 
 import com.guillermo.gestor.beans.FileToDownload;
+import com.guillermo.gestor.principal.view.PrincipalView;
 import com.guillermo.gestor.util.Notifications;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
-import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.validator.routines.UrlValidator;
 
@@ -13,16 +14,18 @@ import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-@Data
+
 public class DownloadOptionsModel {
-    private Notifications notifications;
-    private TextField tfDelayTime, tfURL;
+    private final Notifications notifications;
+    private final TextField tfDelayTime;
+    private final TextField tfURL;
     private String fileName, path, url;
 
     public DownloadOptionsModel(TextField tfDelayTime, TextField tfURL, String path) {
         this.tfDelayTime = tfDelayTime;
         this.tfURL = tfURL;
         this.path = path;
+        notifications = new Notifications();
     }
 
     /**
@@ -106,7 +109,7 @@ public class DownloadOptionsModel {
 
     /**
      * The method builds a new FileToDownload.
-     * the object is based on the parameters shows at the download options screen.
+     * The object is based on the parameters shows at the download options screen.
      *
      * @return Object
      */
@@ -121,5 +124,17 @@ public class DownloadOptionsModel {
         fileToDownload.setPath(path);
         fileToDownload.setReady(true);
         return fileToDownload;
+    }
+
+    /**
+     * The method change the default path through a dialog.
+     * The local variable path gets updated.
+     */
+    public void selectPath() {
+        DirectoryChooser directoryChooser = new DirectoryChooser();
+        File file = directoryChooser.
+                showDialog(PrincipalView.stage);
+        path = file.getPath();
+
     }
 }

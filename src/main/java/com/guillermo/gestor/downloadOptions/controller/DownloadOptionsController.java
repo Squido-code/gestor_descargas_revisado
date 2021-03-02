@@ -3,15 +3,12 @@ package com.guillermo.gestor.downloadOptions.controller;
 import com.guillermo.gestor.beans.FileToDownload;
 import com.guillermo.gestor.download.view.DownloadView;
 import com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel;
-import com.guillermo.gestor.principal.view.PrincipalView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
-import javafx.stage.DirectoryChooser;
 
-import java.io.File;
 import java.io.IOException;
 
 
@@ -78,11 +75,7 @@ public class DownloadOptionsController {
      */
     @FXML
     private void selectPath() {
-        DirectoryChooser directoryChooser = new DirectoryChooser();
-        File file = directoryChooser.
-                showDialog(PrincipalView.stage);
-        path = file.getPath();
-        downloadOptionsModel.setPath(path);
+        downloadOptionsModel.selectPath();
     }
 
 
