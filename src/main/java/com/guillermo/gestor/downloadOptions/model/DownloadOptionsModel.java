@@ -122,7 +122,7 @@ public class DownloadOptionsModel {
         fileToDownload.setUrl(url);
         fileToDownload.setName(fileName);
         fileToDownload.setPath(path);
-        fileToDownload.setReady(true);
+        fileToDownload.setDelayed(true);
         return fileToDownload;
     }
 
@@ -134,6 +134,9 @@ public class DownloadOptionsModel {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File file = directoryChooser.
                 showDialog(PrincipalView.stage);
+        if (file.getPath().isBlank()) {
+            return;
+        }
         path = file.getPath();
 
     }

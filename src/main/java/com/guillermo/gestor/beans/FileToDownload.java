@@ -1,7 +1,7 @@
 package com.guillermo.gestor.beans;
 
 public class FileToDownload {
-    boolean ready;
+    boolean isDelayed;
     private String url;
     private String name;
     private int delay;
@@ -43,11 +43,11 @@ public class FileToDownload {
         this.delay = delay;
     }
 
-    public boolean isReady() {
-        return ready;
+    public boolean isDelayed() {
+        return isDelayed;
     }
 
-    public void setReady(boolean ready) {
-        this.ready = ready;
+    public void setDelayed(boolean delayed) {
+        this.isDelayed = delayed;
     }
 }

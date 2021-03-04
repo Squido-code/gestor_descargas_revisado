@@ -1,4 +1,69 @@
 package com.guillermo.gestor.download.model;
 
-public class DownloadModel {
+import com.guillermo.gestor.beans.FileToDownload;
+import com.guillermo.gestor.util.Notifications;
+import javafx.concurrent.Task;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.text.DecimalFormat;
+
+public class DownloadModel extends Task<Void> {
+    URL url;
+    File file;
+    Notifications notifications;
+    Boolean isDelayed;
+    int delay;
+
+    public DownloadModel(FileToDownload fileToDownload) throws MalformedURLException {
+        url = new URL(fileToDownload.getUrl());
+        file = new File(fileToDownload.getPath() + fileToDownload.getName());
+        notifications = new Notifications();
+    }
+
+    @Override
+    protected Void call() {
+
+        try {
+            updateMessage("Connecting . . .");
+            URLConnection urlConnection = null;
+            urlConnection = url.openConnection();
+            double fileSize = urlConnection.getContentLength();
+            System.out.println(fileSize);
+            BufferedInputStream in = new BufferedInputStream(url.openStream());
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            byte[] dataBuffer = new byte[1024];
+            int bytesRead;
+            int totalRead = 0;
+            double downloadProgress = 0;
+
+            while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {
+                downloadProgress = ((double) totalRead / fileSize);
+                updateProgress(downloadProgress, 1);
+                DecimalFormat decimalFormat = new DecimalFormat("0.00");
+                updateMessage(decimalFormat.format(downloadProgress * 100) + " %");
+
+                fileOutputStream.write(dataBuffer, 0, bytesRead);
+                totalRead += bytesRead;
+
+                if (isCancelled()) {
+                    fileOutputStream.close();
+                    return null;
+                }
+            }
+            fileOutputStream.close();
+            updateProgress(1, 1);
+        } catch (IOException e) {
+            e.printStackTrace();
+            notifications.errorAlert("error en la conexion");
+            return null;
+        }
+
+        return null;
+    }
 }

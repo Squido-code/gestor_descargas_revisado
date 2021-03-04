@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
@@ -8,9 +7,9 @@
    <children>
       <ProgressBar fx:id="pgProgress" layoutX="14.0" layoutY="30.0" prefWidth="200.0" progress="0.0"/>
       <Button fx:id="btStart" layoutX="228.0" layoutY="27.0" mnemonicParsing="false" onAction="#start" text="Start"/>
-      <Button fx:id="btPause" layoutX="279.0" layoutY="27.0" mnemonicParsing="false" onAction="#pause" text="Pause"/>
-      <Button fx:id="btStop" layoutX="340.0" layoutY="27.0" mnemonicParsing="false" onAction="#stop" text="Stop"/>
-      <Label layoutX="22.0" layoutY="55.0" text="Label"/>
-      <Button fx:id="btDelete" layoutX="393.0" layoutY="27.0" mnemonicParsing="false" onAction="#delete" text="Delete"/>
+      <Button fx:id="btStop" layoutX="279.0" layoutY="27.0" mnemonicParsing="false" onAction="#stop" text="Stop"/>
+      <Label fx:id="lbProgress" layoutX="22.0" layoutY="55.0"/>
+      <Button fx:id="btDelete" layoutX="331.0" layoutY="26.0" mnemonicParsing="false" onAction="#delete" text="Delete"/>
+      <Label fx:id="lbFileName" layoutX="22.0" layoutY="6.0"/>
    </children>
 </AnchorPane>
