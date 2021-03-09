@@ -11,14 +11,18 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.net.MalformedURLException;
 import java.util.Optional;
 
+
 public class DownloadController {
-    FileToDownload fileToDownload;
-    DownloadModel downloadModel;
-    Notifications notifications;
+    public static Logger logger = LogManager.getLogger(DownloadController.class);
+    private FileToDownload fileToDownload;
+    private DownloadModel downloadModel;
+    private Notifications notifications;
 
     @FXML
     Button btStart, btStop, btDelete;
@@ -33,7 +37,7 @@ public class DownloadController {
             this.fileToDownload = fileToDownload;
             this.downloadModel = new DownloadModel(fileToDownload);
         } catch (MalformedURLException e) {
-            e.printStackTrace();
+            logger.trace(e.getMessage());
             notifications.errorAlert("URL error");
         }
     }
@@ -97,6 +101,7 @@ public class DownloadController {
         Node n = (Node) event.getSource();
         Node p = n.getParent();
         ((VBox) p.getParent()).getChildren().remove(p);
+        logger.trace("Download deleted");
     }
 
     /**

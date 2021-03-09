@@ -3,6 +3,8 @@ package com.guillermo.gestor.download.model;
 import com.guillermo.gestor.beans.FileToDownload;
 import com.guillermo.gestor.util.Notifications;
 import javafx.concurrent.Task;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -14,6 +16,7 @@ import java.net.URLConnection;
 import java.text.DecimalFormat;
 
 public class DownloadModel extends Task<Void> {
+    public static Logger logger = LogManager.getLogger(DownloadModel.class);
     URL url;
     File file;
     Notifications notifications;
@@ -24,11 +27,12 @@ public class DownloadModel extends Task<Void> {
         url = new URL(fileToDownload.getUrl());
         file = new File(fileToDownload.getPath() + fileToDownload.getName());
         notifications = new Notifications();
+
     }
 
     @Override
     protected Void call() {
-
+        logger.trace("download: " + file.getName() + " Initialized");
         try {
             updateMessage("Connecting . . .");
             URLConnection urlConnection = null;
@@ -53,17 +57,18 @@ public class DownloadModel extends Task<Void> {
 
                 if (isCancelled()) {
                     fileOutputStream.close();
+                    logger.trace("Download cancelled");
                     return null;
                 }
             }
             fileOutputStream.close();
             updateProgress(1, 1);
+            logger.trace("download complete");
         } catch (IOException e) {
-            e.printStackTrace();
             notifications.errorAlert("error en la conexion");
+            logger.trace(e.getMessage());
             return null;
         }
-
         return null;
     }
 }

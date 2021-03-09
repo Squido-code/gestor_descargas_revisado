@@ -9,13 +9,17 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.validator.routines.UrlValidator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
 
 
+
 public class DownloadOptionsModel {
+    public static Logger logger = LogManager.getLogger(DownloadOptionsModel.class);
     private final Notifications notifications;
     private final TextField tfDelayTime;
     private final TextField tfURL;
@@ -34,6 +38,7 @@ public class DownloadOptionsModel {
      * @param button object to obtain the current stage.
      */
     public void closeWindow(Button button) {
+        logger.trace("close windows");
         Stage stage = (Stage) button.
                 getParent().
                 getScene().
@@ -123,6 +128,8 @@ public class DownloadOptionsModel {
         fileToDownload.setName(fileName);
         fileToDownload.setPath(path);
         fileToDownload.setDelayed(true);
+
+        logger.trace("download built");
         return fileToDownload;
     }
 
@@ -131,6 +138,7 @@ public class DownloadOptionsModel {
      * The local variable path gets updated.
      */
     public void selectPath() {
+
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File file = directoryChooser.
                 showDialog(PrincipalView.stage);
@@ -138,6 +146,6 @@ public class DownloadOptionsModel {
             return;
         }
         path = file.getPath();
-
+        logger.trace("new path: " + path);
     }
 }

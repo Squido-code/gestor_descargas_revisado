@@ -8,12 +8,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 
 
 public class DownloadOptionsController {
-
+    public static Logger logger = LogManager.getLogger(DownloadOptionsModel.class);
 
     private final VBox vbDownloads;
     private String path;
@@ -38,6 +40,7 @@ public class DownloadOptionsController {
     public void initialize() {
         tfDelayTime.setText("0");
         this.downloadOptionsModel = new DownloadOptionsModel(tfDelayTime, tfURL, path);
+
     }
 
     /**
@@ -47,6 +50,7 @@ public class DownloadOptionsController {
     @FXML
     public void accept() {
         try {
+            logger.trace("Download accepted");
             if (!downloadOptionsModel.
                     validations()) {
                 return;
@@ -56,7 +60,7 @@ public class DownloadOptionsController {
             vbDownloads.getChildren().
                     add(downloadView.downloadViewUi());
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.trace(e.getMessage());
         }
         downloadOptionsModel.closeWindow(btAccept);
     }

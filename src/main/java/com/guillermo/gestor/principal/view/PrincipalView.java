@@ -21,15 +21,23 @@ public class PrincipalView {
      *
      * @throws IOException
      */
-    public void principalUi() throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Resources.getUI("uiPrincipal.fxml"));
-        PrincipalController controller = new PrincipalController();
-        loader.setController(controller);
-        VBox vBox = loader.load();
-        Scene scene = new Scene(vBox);
-        stage.setScene(scene);
-        stage.show();
+    public void principalUi() {
+
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Resources.getUI("uiPrincipal.fxml"));
+            PrincipalController controller = new PrincipalController();
+            loader.setController(controller);
+            VBox vBox = null;
+            vBox = loader.load();
+            Scene scene = new Scene(vBox);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+
     }
 
 }

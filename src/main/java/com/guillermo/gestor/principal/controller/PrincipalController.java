@@ -1,16 +1,16 @@
 package com.guillermo.gestor.principal.controller;
 
-import com.guillermo.gestor.downloadOptions.view.DownloadOptionsView;
 import com.guillermo.gestor.principal.model.PrincipalModel;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
-
-import java.io.IOException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
 public class PrincipalController {
+    public static Logger logger = LogManager.getLogger(PrincipalController.class);
     public Button btNewDownload;
 
     public VBox vbDownloads;
@@ -24,13 +24,8 @@ public class PrincipalController {
 
     @FXML
     public void newDownload(Event event) {
-
-        try {
-            DownloadOptionsView downloadOptionsView = new DownloadOptionsView(vbDownloads);
-            downloadOptionsView.downloadOptionsUi();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        logger.trace("Starting download options");
+        principalModel.buildDownload(vbDownloads);
 
 
     }
