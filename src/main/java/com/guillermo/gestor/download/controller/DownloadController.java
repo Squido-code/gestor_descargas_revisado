@@ -25,11 +25,11 @@ public class DownloadController {
     private Notifications notifications;
 
     @FXML
-    Button btStart, btStop, btDelete;
+    public Button btStart, btStop, btDelete;
     @FXML
-    Label lbFileName, lbProgress;
+    public Label lbFileName, lbProgress;
     @FXML
-    ProgressBar pgProgress;
+    public ProgressBar pgProgress;
 
     public DownloadController(FileToDownload fileToDownload) {
         try {

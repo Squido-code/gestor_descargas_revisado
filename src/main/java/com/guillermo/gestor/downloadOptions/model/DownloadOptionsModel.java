@@ -1,11 +1,10 @@
 package com.guillermo.gestor.downloadOptions.model;
 
 import com.guillermo.gestor.beans.FileToDownload;
-import com.guillermo.gestor.principal.view.PrincipalView;
+import com.guillermo.gestor.util.Common;
 import com.guillermo.gestor.util.Notifications;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.validator.routines.UrlValidator;
@@ -16,6 +15,7 @@ import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import static com.guillermo.gestor.util.Common.globalPath;
 
 
 public class DownloadOptionsModel {
@@ -24,12 +24,14 @@ public class DownloadOptionsModel {
     private final TextField tfDelayTime;
     private final TextField tfURL;
     private String fileName, path, url;
+    private final Common common;
 
-    public DownloadOptionsModel(TextField tfDelayTime, TextField tfURL, String path) {
+    public DownloadOptionsModel(TextField tfDelayTime, TextField tfURL) {
         this.tfDelayTime = tfDelayTime;
         this.tfURL = tfURL;
-        this.path = path;
+        this.path = globalPath;
         notifications = new Notifications();
+        common = new Common();
     }
 
     /**
@@ -120,15 +122,13 @@ public class DownloadOptionsModel {
      */
     public FileToDownload build() {
         FileToDownload fileToDownload = new FileToDownload();
-        String delayString = tfDelayTime.getText();
-        int delayInt = Integer.
-                parseInt(delayString);
-        fileToDownload.setDelay(delayInt);
+        int delay = Integer.
+                parseInt(tfDelayTime.getText());
+        fileToDownload.setDelay(delay);
         fileToDownload.setUrl(url);
         fileToDownload.setName(fileName);
         fileToDownload.setPath(path);
-        fileToDownload.setDelayed(true);
-
+        if (delay > 0) fileToDownload.setDelayed(true);
         logger.trace("download built");
         return fileToDownload;
     }
@@ -138,14 +138,7 @@ public class DownloadOptionsModel {
      * The local variable path gets updated.
      */
     public void selectPath() {
-
-        DirectoryChooser directoryChooser = new DirectoryChooser();
-        File file = directoryChooser.
-                showDialog(PrincipalView.stage);
-        if (file.getPath().isBlank()) {
-            return;
-        }
-        path = file.getPath();
+        path = common.selectPath();
         logger.trace("new path: " + path);
     }
 }

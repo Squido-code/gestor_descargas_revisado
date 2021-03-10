@@ -11,14 +11,13 @@ import javafx.scene.layout.VBox;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
+import static com.guillermo.gestor.util.Common.globalPath;
 
 
 public class DownloadOptionsController {
     public static Logger logger = LogManager.getLogger(DownloadOptionsModel.class);
 
     private final VBox vbDownloads;
-    private String path;
     private DownloadOptionsModel downloadOptionsModel;
     public TextField tfURL, tfDelayTime;
     public Button btSelectPath, btAccept, btCancel;
@@ -39,7 +38,8 @@ public class DownloadOptionsController {
     @FXML
     public void initialize() {
         tfDelayTime.setText("0");
-        this.downloadOptionsModel = new DownloadOptionsModel(tfDelayTime, tfURL, path);
+        this.downloadOptionsModel = new DownloadOptionsModel(tfDelayTime, tfURL);
+        lbPath.setText(globalPath);
 
     }
 
@@ -49,19 +49,15 @@ public class DownloadOptionsController {
      */
     @FXML
     public void accept() {
-        try {
-            logger.trace("Download accepted");
-            if (!downloadOptionsModel.
-                    validations()) {
-                return;
-            }
-            FileToDownload fileToDownload = downloadOptionsModel.build();
-            DownloadView downloadView = new DownloadView(fileToDownload);
-            vbDownloads.getChildren().
-                    add(downloadView.downloadViewUi());
-        } catch (IOException e) {
-            logger.trace(e.getMessage());
+        logger.trace("Download accepted");
+        if (!downloadOptionsModel.
+                validations()) {
+            return;
         }
+        FileToDownload fileToDownload = downloadOptionsModel.build();
+        DownloadView downloadView = new DownloadView(fileToDownload);
+        vbDownloads.getChildren().
+                add(downloadView.downloadViewUi());
         downloadOptionsModel.closeWindow(btAccept);
     }
 

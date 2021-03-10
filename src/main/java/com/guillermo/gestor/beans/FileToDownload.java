@@ -1,5 +1,6 @@
 package com.guillermo.gestor.beans;
 
+
 public class FileToDownload {
     boolean isDelayed;
     private String url;
@@ -7,8 +8,13 @@ public class FileToDownload {
     private int delay;
     private String path;
 
-    public void buildFileToDownload() {
 
+    public boolean isDelayed() {
+        return isDelayed;
+    }
+
+    public void setDelayed(boolean delayed) {
+        isDelayed = delayed;
     }
 
     public String getUrl() {
@@ -17,14 +23,6 @@ public class FileToDownload {
 
     public void setUrl(String url) {
         this.url = url;
-    }
-
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
     }
 
     public String getName() {
@@ -43,11 +41,11 @@ public class FileToDownload {
         this.delay = delay;
     }
 
-    public boolean isDelayed() {
-        return isDelayed;
+    public String getPath() {
+        return path;
     }
 
-    public void setDelayed(boolean delayed) {
-        this.isDelayed = delayed;
+    public void setPath(String path) {
+        this.path = path;
     }
 }
