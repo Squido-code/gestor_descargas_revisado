@@ -12,8 +12,8 @@ import java.io.IOException;
 
 
 public class DownloadView {
-    private final FileToDownload fileToDownload;
     public static Logger logger = LogManager.getLogger(DownloadView.class);
+    private final FileToDownload fileToDownload;
 
     public DownloadView(FileToDownload fileToDownload) {
         this.fileToDownload = fileToDownload;

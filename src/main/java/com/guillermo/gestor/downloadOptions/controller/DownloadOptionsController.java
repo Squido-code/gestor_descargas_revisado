@@ -18,10 +18,10 @@ public class DownloadOptionsController {
     public static Logger logger = LogManager.getLogger(DownloadOptionsModel.class);
 
     private final VBox vbDownloads;
-    private DownloadOptionsModel downloadOptionsModel;
     public TextField tfURL, tfDelayTime;
     public Button btSelectPath, btAccept, btCancel;
     public Label lbPath;
+    private DownloadOptionsModel downloadOptionsModel;
 
     /**
      * Constructor
@@ -76,9 +76,8 @@ public class DownloadOptionsController {
     @FXML
     private void selectPath() {
         downloadOptionsModel.selectPath();
+        lbPath.setText(downloadOptionsModel.getPath());
     }
-
-
 
 
 }

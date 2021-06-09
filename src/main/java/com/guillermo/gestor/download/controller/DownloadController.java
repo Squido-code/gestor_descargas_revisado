@@ -14,22 +14,22 @@ import javafx.scene.layout.VBox;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.util.Optional;
 
 
 public class DownloadController {
     public static Logger logger = LogManager.getLogger(DownloadController.class);
-    private FileToDownload fileToDownload;
-    private DownloadModel downloadModel;
-    private Notifications notifications;
-
     @FXML
-    public Button btStart, btStop, btDelete;
+    public Button btStart, btStop, btDeleteDownload, btDeleteFile;
     @FXML
     public Label lbFileName, lbProgress;
     @FXML
     public ProgressBar pgProgress;
+    private FileToDownload fileToDownload;
+    private DownloadModel downloadModel;
+    private Notifications notifications;
 
     public DownloadController(FileToDownload fileToDownload) {
         try {
@@ -64,7 +64,7 @@ public class DownloadController {
                     public void changed(ObservableValue<? extends Worker.State> observable, Worker.State oldValue, Worker.State newValue) {
                         if (newValue == Worker.State.SUCCEEDED) {
                             lbProgress.setText("Archivo completado");
-                            changeButtonStatus("finish");
+                            changeButtonStatus("stop");
 
                         }
                         if (newValue == Worker.State.CANCELLED) {
@@ -104,6 +104,15 @@ public class DownloadController {
         logger.trace("Download deleted");
     }
 
+    @FXML
+    public void deleteFile() {
+        File file = new File(fileToDownload.getPath(), fileToDownload.getName());
+        logger.trace("File: " + file.getName() + " deleted");
+        file.delete();
+        lbProgress.setText("Archivo eliminado");
+        changeButtonStatus("start");
+    }
+
     /**
      * Method that disable the download buttons base on the state of the download file.
      *
@@ -114,22 +123,20 @@ public class DownloadController {
             case "start":
                 btStart.setDisable(false);
                 btStop.setDisable(true);
-                btDelete.setDisable(true);
+                btDeleteDownload.setDisable(false);
+                btDeleteFile.setDisable(true);
                 break;
             case "downloading":
                 btStart.setDisable(true);
                 btStop.setDisable(false);
-                btDelete.setDisable(false);
+                btDeleteDownload.setDisable(true);
+                btDeleteFile.setDisable(true);
                 break;
             case "stop":
-                btStart.setDisable(false);
-                btStop.setDisable(true);
-                btDelete.setDisable(false);
-                break;
-            case "finish":
                 btStart.setDisable(true);
                 btStop.setDisable(true);
-                btDelete.setDisable(false);
+                btDeleteDownload.setDisable(false);
+                btDeleteFile.setDisable(false);
                 break;
         }
     }

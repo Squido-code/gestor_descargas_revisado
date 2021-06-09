@@ -25,7 +25,7 @@ public class DownloadModel extends Task<Void> {
 
     public DownloadModel(FileToDownload fileToDownload) throws MalformedURLException {
         url = new URL(fileToDownload.getUrl());
-        file = new File(fileToDownload.getPath() + fileToDownload.getName());
+        file = new File(fileToDownload.getPath(), fileToDownload.getName());
         notifications = new Notifications();
         isDelayed = fileToDownload.isDelayed();
         delay = fileToDownload.getDelay();

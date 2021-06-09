@@ -5,11 +5,14 @@
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
             minWidth="-Infinity" prefHeight="77.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/15.0.1">
    <children>
-      <ProgressBar fx:id="pgProgress" layoutX="14.0" layoutY="30.0" prefWidth="200.0" progress="0.0"/>
-      <Button fx:id="btStart" layoutX="228.0" layoutY="27.0" mnemonicParsing="false" onAction="#start" text="Start"/>
-      <Button fx:id="btStop" layoutX="279.0" layoutY="27.0" mnemonicParsing="false" onAction="#stop" text="Stop"/>
+      <ProgressBar fx:id="pgProgress" layoutX="14.0" layoutY="30.0" prefHeight="18.0" prefWidth="127.0" progress="0.0"/>
+      <Button fx:id="btStart" layoutX="151.0" layoutY="27.0" mnemonicParsing="false" onAction="#start" text="Start"/>
+      <Button fx:id="btStop" layoutX="201.0" layoutY="27.0" mnemonicParsing="false" onAction="#stop" text="Stop"/>
       <Label fx:id="lbProgress" layoutX="22.0" layoutY="55.0"/>
-      <Button fx:id="btDelete" layoutX="331.0" layoutY="26.0" mnemonicParsing="false" onAction="#delete" text="Delete"/>
+      <Button fx:id="btDeleteDownload" layoutX="339.0" layoutY="26.0" mnemonicParsing="false" onAction="#delete"
+              text="Delete download"/>
       <Label fx:id="lbFileName" layoutX="22.0" layoutY="6.0"/>
+      <Button fx:id="btDeleteFile" layoutX="253.0" layoutY="26.0" mnemonicParsing="false" onAction="#deleteFile"
+              text="Delete file"/>
    </children>
 </AnchorPane>

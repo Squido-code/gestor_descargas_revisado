@@ -13,12 +13,10 @@ import static com.guillermo.gestor.util.Common.globalPath;
 
 public class PrincipalController {
     public static Logger logger = LogManager.getLogger(PrincipalController.class);
-
+    private final PrincipalModel principalModel;
     public VBox vbDownloads;
     @FXML
     public Label lbDefaultPath;
-
-    private final PrincipalModel principalModel;
 
 
     public PrincipalController() {

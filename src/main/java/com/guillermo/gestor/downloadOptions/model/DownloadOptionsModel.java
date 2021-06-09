@@ -23,8 +23,8 @@ public class DownloadOptionsModel {
     private final Notifications notifications;
     private final TextField tfDelayTime;
     private final TextField tfURL;
-    private String fileName, path, url;
     private final Common common;
+    private String fileName, path, url;
 
     public DownloadOptionsModel(TextField tfDelayTime, TextField tfURL) {
         this.tfDelayTime = tfDelayTime;
@@ -140,5 +140,9 @@ public class DownloadOptionsModel {
     public void selectPath() {
         path = common.selectPath();
         logger.trace("new path: " + path);
+    }
+
+    public String getPath() {
+        return path;
     }
 }
