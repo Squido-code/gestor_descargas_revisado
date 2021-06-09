@@ -3,6 +3,7 @@ package com.guillermo.gestor.util;
 import java.io.File;
 import java.net.URL;
 
+
 public class Resources {
     /**
      * Create an url with the given name.
@@ -15,5 +16,12 @@ public class Resources {
                 currentThread().
                 getContextClassLoader().
                 getResource("ui" + File.separator + Filename);
+    }
+
+    public static URL getImage(String Filename) {
+        return Thread.
+                currentThread().
+                getContextClassLoader().
+                getResource("images" + File.separator + Filename);
     }
 }
