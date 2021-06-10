@@ -62,7 +62,7 @@ public class DownloadModel extends Task<Void> {
                 downloadProgress = ((double) totalRead / fileSize);
                 updateProgress(downloadProgress, 1);
                 DecimalFormat decimalFormat = new DecimalFormat("0.00");
-                updateMessage(decimalFormat.format(downloadProgress * 100) + " %");
+                updateMessage(decimalFormat.format(downloadProgress * 100) + " % " + decimalFormat.format((double) totalRead / 1000000) + " Megabytes descargados");
                 fileOutputStream.write(dataBuffer, 0, bytesRead);
                 totalRead += bytesRead;
                 if (isCancelled()) {

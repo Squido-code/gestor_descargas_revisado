@@ -1,317 +1,80 @@
-17:53:40.892 [main] TRACE com.guillermo.gestor.App - opening application
-17:53:48.784 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - new  global path: C:\Users\Casa\OneDrive\Escritorio
-17:54:25.557 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-17:54:25.558 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-17:54:56.190 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-17:54:56.204 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-17:54:56.216 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-17:54:56.217 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-17:55:09.448 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.13-rc5.tar.gz Initialized
-17:55:20.986 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
-17:55:29.950 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.13-rc5.tar.gz deleted
-17:56:28.475 [main] TRACE com.guillermo.gestor.App - opening application
-17:56:30.150 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-17:56:30.151 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-17:56:33.853 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-17:56:33.867 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-17:56:33.878 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-17:56:33.879 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-17:56:35.904 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.13-rc5.tar.gz Initialized
-17:57:49.558 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.13-rc5.tar.gz deleted
-17:58:20.268 [main] TRACE com.guillermo.gestor.App - opening application
-17:58:22.006 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-17:58:22.006 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-17:58:26.800 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: D:\Descargas
-17:58:30.358 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-17:58:30.371 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-17:58:30.382 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-17:58:30.384 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-17:58:31.720 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.13-rc5.tar.gz Initialized
-17:59:02.203 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download complete
-18:00:11.915 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
-18:10:11.409 [main] TRACE com.guillermo.gestor.App - opening application
-18:10:55.976 [main] TRACE com.guillermo.gestor.App - opening application
-18:10:57.950 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:10:57.951 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:11:01.374 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:11:01.388 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:11:01.401 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:11:01.402 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:11:02.601 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.13-rc5.tar.gz Initialized
-18:11:09.294 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.13-rc5.tar.gz deleted
-18:11:29.950 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:11:29.951 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:11:38.241 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: D:\Descargas
-18:11:42.021 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:11:42.022 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:11:42.026 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:11:42.026 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:11:43.767 [Thread-4] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.13-rc5.tar.gz Initialized
-18:11:54.340 [Thread-4] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
-18:12:45.982 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
-18:12:47.790 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:12:47.790 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:12:55.937 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\Casa\OneDrive\Pictures
-18:12:56.990 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:12:56.990 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:12:56.993 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:12:56.993 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:13:10.391 [Thread-5] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.13-rc5.tar.gz Initialized
-18:13:35.340 [Thread-5] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
-18:16:32.317 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.13-rc5.tar.gz deleted
-18:16:34.119 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:16:34.119 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:16:39.709 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\Casa\OneDrive\Escritorio
-18:16:41.038 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:16:41.038 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:16:41.041 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:16:41.041 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:16:42.598 [Thread-6] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.9.tar.xz Initialized
-18:16:45.831 [Thread-6] TRACE com.guillermo.gestor.download.model.DownloadModel - download complete
-18:17:41.690 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - new  global path: C:\Users\Casa\OneDrive\Escritorio
-18:17:43.149 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:17:43.150 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:21:41.331 [main] TRACE com.guillermo.gestor.App - opening application
-18:21:42.975 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:21:42.975 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:21:49.584 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: D:\Descargas
-18:21:51.285 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:21:51.299 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:21:51.318 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:21:51.319 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:21:53.608 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.9.tar.xz Initialized
-18:21:56.727 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download complete
-18:23:05.371 [main] TRACE com.guillermo.gestor.App - opening application
-18:23:06.910 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:23:06.911 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:23:13.182 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\Casa\OneDrive\Escritorio
-18:23:14.830 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:23:25.869 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:23:25.877 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:23:25.888 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:23:25.890 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:23:28.761 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.9.tar.xz Initialized
-18:23:32.265 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
-18:23:43.695 [main] TRACE com.guillermo.gestor.App - opening application
-18:24:36.141 [main] TRACE com.guillermo.gestor.App - opening application
-18:24:49.559 [main] TRACE com.guillermo.gestor.App - opening application
-18:25:55.344 [main] TRACE com.guillermo.gestor.App - opening application
-18:26:00.600 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - new  global path: D:\Descargas
-18:26:02.830 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:26:02.831 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:26:06.326 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:26:06.340 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:26:06.352 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:26:06.353 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:26:38.048 [main] TRACE com.guillermo.gestor.App - opening application
-18:26:43.421 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:26:43.422 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:26:50.179 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: D:\Descargas
-18:26:53.829 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:26:53.843 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:26:53.854 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:26:53.856 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:26:57.656 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.9.tar.xz Initialized
-18:27:01.627 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
-18:27:03.238 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.12.9.tar.xz deleted
-18:27:15.707 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
-18:27:57.118 [main] TRACE com.guillermo.gestor.App - opening application
-18:28:39.207 [main] TRACE com.guillermo.gestor.App - opening application
-21:25:31.460 [main] TRACE com.guillermo.gestor.App - opening application
-21:25:52.090 [main] TRACE com.guillermo.gestor.App - opening application
-21:25:52.122 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:25:54.208 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:34:41.374 [main] TRACE com.guillermo.gestor.App - opening application
-21:34:41.406 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:34:43.620 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:35:32.004 [main] TRACE com.guillermo.gestor.App - opening application
-21:35:32.038 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:35:34.253 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:36:17.622 [main] TRACE com.guillermo.gestor.App - opening application
-21:36:17.654 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:39:17.109 [main] TRACE com.guillermo.gestor.App - opening application
-21:39:17.141 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:39:19.374 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:39:34.937 [main] TRACE com.guillermo.gestor.App - opening application
-21:39:34.970 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:41:20.568 [main] TRACE com.guillermo.gestor.App - opening application
-21:41:20.604 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:41:22.847 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:43:14.868 [main] TRACE com.guillermo.gestor.App - opening application
-21:43:14.901 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:43:17.132 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:43:35.629 [main] TRACE com.guillermo.gestor.App - opening application
-21:43:35.662 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:43:37.876 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:45:01.514 [main] TRACE com.guillermo.gestor.App - opening application
-21:45:01.544 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:45:16.769 [main] TRACE com.guillermo.gestor.App - opening application
-21:45:16.802 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:45:19.015 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:46:36.730 [main] TRACE com.guillermo.gestor.App - opening application
-21:46:36.761 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:46:38.835 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:47:14.018 [main] TRACE com.guillermo.gestor.App - opening application
-21:47:14.050 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:47:16.279 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:47:37.123 [main] TRACE com.guillermo.gestor.App - opening application
-21:47:37.157 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:47:39.229 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:51:13.709 [main] TRACE com.guillermo.gestor.App - opening application
-21:51:13.741 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:51:15.971 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:51:37.462 [main] TRACE com.guillermo.gestor.App - opening application
-21:51:37.497 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:54:35.678 [main] TRACE com.guillermo.gestor.App - opening application
-21:54:35.709 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:54:37.942 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:55:17.827 [main] TRACE com.guillermo.gestor.App - opening application
-21:55:17.859 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:55:20.087 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:55:39.184 [main] TRACE com.guillermo.gestor.App - opening application
-21:55:39.216 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:55:41.435 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:58:05.905 [main] TRACE com.guillermo.gestor.App - opening application
-21:58:05.938 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-21:58:08.164 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-21:59:59.903 [main] TRACE com.guillermo.gestor.App - opening application
-21:59:59.937 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:00:02.158 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:00:11.232 [main] TRACE com.guillermo.gestor.App - opening application
-22:00:11.263 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:00:13.478 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:00:57.201 [main] TRACE com.guillermo.gestor.App - opening application
-22:00:57.236 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:00:59.453 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:01:16.840 [main] TRACE com.guillermo.gestor.App - opening application
-22:01:16.871 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:01:19.097 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:02:49.616 [main] TRACE com.guillermo.gestor.App - opening application
-22:02:49.648 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:03:03.495 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:03:47.456 [main] TRACE com.guillermo.gestor.App - opening application
-22:03:47.488 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:03:49.715 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:09:50.382 [main] TRACE com.guillermo.gestor.App - opening application
-22:09:50.416 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:09:52.781 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:14:44.389 [main] TRACE com.guillermo.gestor.App - opening application
-22:14:44.429 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:14:46.857 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:16:35.347 [main] TRACE com.guillermo.gestor.App - opening application
-22:16:35.394 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:16:37.804 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:38:09.378 [main] TRACE com.guillermo.gestor.App - opening application
-22:38:09.421 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:38:11.845 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:40:55.068 [main] TRACE com.guillermo.gestor.App - opening application
-22:40:55.111 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:40:57.544 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:41:34.814 [main] TRACE com.guillermo.gestor.App - opening application
-22:41:34.861 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:41:35.239 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:41:56.957 [main] TRACE com.guillermo.gestor.App - opening application
-22:41:56.995 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:41:57.362 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:42:35.493 [main] TRACE com.guillermo.gestor.App - opening application
-22:42:35.533 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:42:37.956 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-22:50:13.151 [main] TRACE com.guillermo.gestor.App - opening application
-22:50:13.195 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-22:50:15.437 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-17:41:00.651 [main] TRACE com.guillermo.gestor.App - opening application
-17:41:00.675 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-17:41:02.866 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-17:43:07.955 [main] TRACE com.guillermo.gestor.App - opening application
-17:43:07.977 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-17:43:10.168 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-17:54:00.656 [main] TRACE com.guillermo.gestor.App - opening application
-17:54:00.677 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-17:54:00.887 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - principalUi
-17:54:26.975 [main] TRACE com.guillermo.gestor.App - opening application
-17:54:26.996 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-17:56:44.288 [main] TRACE com.guillermo.gestor.App - opening application
-17:56:44.308 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-17:57:08.067 [main] TRACE com.guillermo.gestor.App - opening application
-17:57:08.087 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:02:00.611 [main] TRACE com.guillermo.gestor.App - opening application
-18:02:00.637 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:02:40.723 [main] TRACE com.guillermo.gestor.App - opening application
-18:02:40.743 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:03:14.164 [main] TRACE com.guillermo.gestor.App - opening application
-18:03:14.185 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:06:56.553 [main] TRACE com.guillermo.gestor.App - opening application
-18:06:56.572 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:08:20.436 [main] TRACE com.guillermo.gestor.App - opening application
-18:08:20.458 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:08:53.176 [main] TRACE com.guillermo.gestor.App - opening application
-18:08:53.195 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:09:37.917 [main] TRACE com.guillermo.gestor.App - opening application
-18:09:37.941 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:10:26.610 [main] TRACE com.guillermo.gestor.App - opening application
-18:10:26.629 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:11:03.349 [main] TRACE com.guillermo.gestor.App - opening application
-18:11:03.366 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:11:42.117 [main] TRACE com.guillermo.gestor.App - opening application
-18:11:42.139 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:12:19.104 [main] TRACE com.guillermo.gestor.App - opening application
-18:12:19.124 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:12:36.151 [main] TRACE com.guillermo.gestor.App - opening application
-18:12:36.170 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:16:22.948 [main] TRACE com.guillermo.gestor.App - opening application
-18:16:22.968 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:18:25.804 [main] TRACE com.guillermo.gestor.App - opening application
-18:18:25.824 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:20:19.194 [main] TRACE com.guillermo.gestor.App - opening application
-18:20:19.217 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:20:39.200 [main] TRACE com.guillermo.gestor.App - opening application
-18:20:39.224 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:22:16.260 [main] TRACE com.guillermo.gestor.App - opening application
-18:22:16.280 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:22:41.616 [main] TRACE com.guillermo.gestor.App - opening application
-18:22:41.638 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:23:10.198 [main] TRACE com.guillermo.gestor.App - opening application
-18:23:10.217 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:23:29.101 [main] TRACE com.guillermo.gestor.App - opening application
-18:23:29.126 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:23:36.812 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:23:36.812 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:23:42.166 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Desktop
-18:23:43.517 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:23:43.530 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:23:43.539 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:23:43.540 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:23:44.526 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
-18:23:50.027 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
-18:23:51.468 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.12.10.tar.xz deleted
-18:24:10.228 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.12.10.tar.xz deleted
-18:24:13.011 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
-18:24:13.708 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:24:13.708 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:24:15.756 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:24:15.757 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:24:15.771 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:24:15.771 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:24:16.893 [Thread-5] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
-18:26:06.086 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.12.10.tar.xz deleted
-18:26:08.672 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
-18:26:10.861 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:26:10.861 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:26:22.525 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:26:22.525 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:26:22.528 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:26:22.528 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:26:23.717 [Thread-6] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
-18:26:40.010 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
-18:26:48.398 [main] TRACE com.guillermo.gestor.App - opening application
-18:26:48.418 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
-18:26:55.828 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
-18:26:55.828 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
-18:27:00.828 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Desktop
-18:27:02.613 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
-18:27:02.624 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
-18:27:02.634 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
-18:27:02.635 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
-18:27:03.782 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
-18:27:13.198 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
-18:27:15.420 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.12.10.tar.xz deleted
+19:01:47.226 [main] TRACE com.guillermo.gestor.App - opening application
+19:01:47.254 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
+19:01:56.333 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
+19:01:56.333 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
+19:02:05.260 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Desktop
+19:02:06.142 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
+19:02:06.153 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
+19:02:06.162 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
+19:02:06.163 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
+19:02:13.328 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: gestor_descargas_revisado Initialized
+19:02:14.972 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download complete
+19:02:37.270 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: gestor_descargas_revisado deleted
+19:02:39.916 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
+19:02:46.478 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
+19:02:46.478 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
+19:02:51.790 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Downloads
+19:02:53.038 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
+19:02:53.038 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
+19:02:53.042 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
+19:02:53.042 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
+19:02:53.909 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
+19:02:53.910 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
+19:02:57.679 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Desktop
+19:02:58.862 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
+19:02:58.862 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
+19:02:58.865 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
+19:02:58.865 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
+19:03:00.102 [Thread-4] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
+19:03:01.398 [Thread-5] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
+19:03:05.124 [Thread-4] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
+19:03:11.160 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.12.10.tar.xz deleted
+19:03:16.759 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
+19:03:24.832 [Thread-5] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
+19:03:25.445 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - File: linux-5.12.10.tar.xz deleted
+19:03:27.130 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.controller.DownloadController - Download deleted
+20:01:56.401 [main] TRACE com.guillermo.gestor.App - opening application
+20:01:56.431 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
+20:02:20.407 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
+20:02:20.408 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
+20:02:25.095 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Downloads
+20:02:25.967 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
+20:02:25.981 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
+20:02:25.991 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
+20:02:25.992 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
+20:02:27.010 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
+20:03:01.290 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
+20:04:28.540 [main] TRACE com.guillermo.gestor.App - opening application
+20:04:28.561 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
+20:04:36.344 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
+20:04:36.344 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
+20:04:41.261 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Downloads
+20:04:42.104 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
+20:04:57.928 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
+20:04:57.934 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
+20:04:57.943 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
+20:04:57.944 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
+20:05:01.082 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
+20:05:24.132 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
+20:05:40.383 [main] TRACE com.guillermo.gestor.App - opening application
+20:05:40.406 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
+20:05:48.816 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
+20:05:48.816 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
+20:05:51.995 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Downloads
+20:05:53.911 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
+20:05:53.925 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
+20:05:53.935 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
+20:05:53.937 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
+20:05:54.946 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
+20:06:07.849 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled
+20:06:40.597 [main] TRACE com.guillermo.gestor.App - opening application
+20:06:40.618 [JavaFX Application Thread] TRACE com.guillermo.gestor.App - Start screen
+20:06:48.591 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.controller.PrincipalController - Starting download options
+20:06:48.591 [JavaFX Application Thread] TRACE com.guillermo.gestor.principal.model.PrincipalModel - Building DownloadOptionsView
+20:06:53.368 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - new path: C:\Users\squid\Downloads
+20:06:54.280 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - Download accepted
+20:06:54.302 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - download built
+20:06:54.313 [JavaFX Application Thread] TRACE com.guillermo.gestor.download.view.DownloadView - Download window initiated
+20:06:54.315 [JavaFX Application Thread] TRACE com.guillermo.gestor.downloadOptions.model.DownloadOptionsModel - close windows
+20:06:55.825 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - download: linux-5.12.10.tar.xz Initialized
+20:07:11.696 [Thread-3] TRACE com.guillermo.gestor.download.model.DownloadModel - Download cancelled

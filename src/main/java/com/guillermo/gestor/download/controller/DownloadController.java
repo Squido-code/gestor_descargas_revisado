@@ -24,7 +24,7 @@ public class DownloadController {
     @FXML
     public Button btStart, btStop, btDeleteDownload, btDeleteFile;
     @FXML
-    public Label lbFileName, lbProgress;
+    public Label lbFileName, lbProgress, lbProgressByte;
     @FXML
     public ProgressBar pgProgress;
     private FileToDownload fileToDownload;
