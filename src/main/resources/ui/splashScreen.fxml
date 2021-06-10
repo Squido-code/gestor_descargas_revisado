@@ -32,15 +32,20 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="388.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/16">
-    <children>
-        <ImageView fx:id="imgSplash" fitHeight="400.0" fitWidth="674.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../splash.JPG"/>
-            </image>
-        </ImageView>
-    </children>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="78.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/16">
+   <children>
+      <AnchorPane prefHeight="77.0" prefWidth="406.0">
+         <children>
+            <Label fx:id="lbTitulo" layoutX="41.0" layoutY="16.0" text="YOUR DOWNLOAD TOOL">
+               <font>
+                  <Font size="30.0"/>
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </VBox>

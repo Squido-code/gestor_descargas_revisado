@@ -1,22 +1,17 @@
 package com.guillermo.gestor.splashScreen.controller;
 
 
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.Label;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-public class SplashController implements Initializable {
-    @FXML
-    public ImageView imgSplash;
-
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image image = new Image("file: splash.JPG");
-        imgSplash.setImage(image);
-    }
+public class SplashController {
+    public Label lbTitulo;
+//    @FXML
+//    public ImageView imgSplash;
+//
+//
+//    @Override
+//    public void initialize(URL url, ResourceBundle resourceBundle) {
+//        Image image = new Image("file: splash.JPG");
+//        imgSplash.setImage(image);
+//    }
 }

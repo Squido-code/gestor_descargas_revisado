@@ -110,7 +110,7 @@ public class DownloadController {
         logger.trace("File: " + file.getName() + " deleted");
         file.delete();
         lbProgress.setText("Archivo eliminado");
-        changeButtonStatus("start");
+        changeButtonStatus("deletedFile");
     }
 
     /**
@@ -138,6 +138,13 @@ public class DownloadController {
                 btDeleteDownload.setDisable(false);
                 btDeleteFile.setDisable(false);
                 break;
+            case "deletedFile":
+                btStart.setDisable(true);
+                btStop.setDisable(true);
+                btDeleteDownload.setDisable(false);
+                btDeleteFile.setDisable(true);
+                break;
+
         }
     }
 }

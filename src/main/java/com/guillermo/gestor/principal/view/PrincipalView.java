@@ -32,6 +32,7 @@ public class PrincipalView {
             vBox = loader.load();
             Scene scene = new Scene(vBox);
             stage.setScene(scene);
+            stage.setTitle("Your download Tool");
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

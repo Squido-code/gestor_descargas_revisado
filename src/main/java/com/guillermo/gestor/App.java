@@ -1,6 +1,5 @@
 package com.guillermo.gestor;
 
-import com.guillermo.gestor.principal.view.PrincipalView;
 import com.guillermo.gestor.splashScreen.view.SplashView;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -17,16 +16,10 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) {
-        try {
-            logger.trace("Start screen");
-            new SplashView(stage).startScreen();
-            Thread.sleep(2000);
-            logger.trace("principalUi");
-            new PrincipalView(stage).
-                    principalUi();
-        } catch (InterruptedException e) {
-            logger.trace(e.getMessage());
-            e.printStackTrace();
-        }
+        logger.trace("Start screen");
+        new SplashView().startScreen(stage);
+//            logger.trace("principalUi");
+//            new PrincipalView(stage).
+//                    principalUi();
     }
 }
